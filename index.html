@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+         crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+        <title>Aldenir Telles</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="./img/logo.png" alt="logo Aldenir Telles" width="120">
+            </div>
+            <div class="icons">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://github.com/aldenirtelles"><i class="fab fa-github fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/aldenirtelles/"><i
+                            class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="mailto:aldenirtelless@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://wa.me/5581971208682"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    </li>
+                </ul>   
+            </div>
+ 
+        </header>
+
+        <main>
+            <section class="container">
+                <div class="photo">
+                    <img src="./img/profile.jpg" alt="Foto Perfil Aldenir Telles">
+                </div>
+                <div class="name">
+                    <h1>Aldenir Telles</h1>
+                    <h5>JR. Front-end Developer</h5>
+                </div>
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fas fa-sort-down"></i>
+                </div>
+                <div style="display: none;" id="about">
+                    <p>
+                        Cursando o 5 período de ciência da computação na UFRPE, tenho muito interesse no mundo da Tecnologia e além de ter
+                        conhecimento em SQL, tenho aprendizado em linguagens como C, JavaScript, CSS3 e HTML. 
+                    </p>
+                </div>
+                <div class="form">
+                    <p>deixe seu contato!</p>
+                    <form action="">
+                        <input type="text" placeholder="seu melhor email :D">
+                        <button>enviar!</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            function displayAbout(){
+                var arrow = document.getElementById('animation');
+                arrow.classList.toggle('rotate');
+                var display = document.getElementById('about');
+                display.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
